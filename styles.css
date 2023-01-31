@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161A27;
+    padding-top: 50px;
+}
+
+
+/*MENU PRINCIPAL*/
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    color: white;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1a1e2aec;
+}
+
+nav a{
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    border-bottom: 1px white solid;
+    transition: 0.5s;
+}
+
+nav a:first-child{
+    margin-left: 0;
+}
+
+nav img{
+    width: 120px;
+    height: 37px;
+    float: left;
+    margin-left: 20px;
+}
+
+.infos-header{
+    margin-top: 40px;
+    position: relative;
+}
+
+#hi-icon{
+    background-color: #1D222D;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 130px;
+    margin-left: 100px;
+}
+
+#hi-icon span{
+    font-size: 75px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#hi-icon p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#hi-icon .nome{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+.infos-header button{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 80%;
+    bottom: 40px;
+}
+
+.infos-header button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.infos-header button a{
+    text-decoration: none;
+    color: white;
+}
+
+.avatar{
+    height: 550px;
+    width: 550px;
+    position: relative;
+    left: 30%;
+    top: -100px;
+    border-radius: 50%;
+    background-color: #1D222D;
+    text-align: center;
+}
+
+.avatar img{
+    width: 470px;
+    height: 470px;
+    position: relative;
+    top: 5%;
+    right: 10px;
+}
+
+#fullstack{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #1D222D;
+    margin-left: 70px;
+}
+
+
+
+/*SKILLS*/
+
+#skills{
+    background-color: #10141E;
+    position: relative;
+    top: -175px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.my-skills{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    width: 80%;
+    
+}
+
+.my-skills h2{
+    font-size: 52px;
+    color: white;
+    margin-left: 50px;
+}
+
+.my-skills p {
+    font-size: 18px;
+    margin-top: 20px;
+    color: white;
+}
+
+.skills-img{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    
+}
+
+.skills-img img{
+    width: 550px;
+    
+}
+
+.tecnologias{
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    margin-left: -50px;
+    
+}
+
+.tecIcons{
+    height: 120px;
+    width: 120px;
+    border-radius: 8px;
+    margin-left: 50px;
+    float: left;
+    margin-bottom: 50px;
+    border: 1px solid #ff6584;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tecIcons img{
+    height: 100px;
+    width: 100px;  
+}
+
+.clear{
+    clear: both;
+}
+
+/*PROJETOS*/
+#projects{
+    text-align: center;
+}
+
+#projects h2{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.projeto-1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+
+.projeto-1 img {
+    width: 900px;
+    height: 506px;
+    margin-left: 40px;
+}
+
+.especificacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.especificacoes h3, h4{
+    color: #ff6584;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.especificacoes p{
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.icone-tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-tec img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px solid #ff6584;
+    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.especificacoes button{
+    margin-top: 50px;
+    width: 350px;
+    color: #10141E;
+    background-color: white;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    border: none;
+}
+
+.especificacoes button:hover{
+    background-color: #10141E;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/*PROJETO 2*/
+
+.projeto-2 img{
+    width: 900px;
+    height: 506px;
+    padding-right: 50px;
+}
+
+.projeto-2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.especificacoes-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.especificacoes-2 h3,
+h4 {
+    color: #ff6584;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.especificacoes-2 p {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.icone-tec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-tec img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin-left: 30px;
+    border: 1px solid #ff6584;
+    border-radius: 10px;
+    border-radius: 50px;
+}
+
+.especificacoes-2 button {
+    margin-top: 50px;
+    width: 350px;
+    color: #10141E;
+    background-color: white;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 18px;
+    border: none;
+}
+
+.especificacoes-2 button:hover {
+    background-color: #10141E;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/*ME CONHEÇA*/
+
+
+#about{
+    background-color: #10141E;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#about h1{
+    color: white;
+    padding-top: 80px;
+    font-size: 42px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.infos p{
+    color: white;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.infos img{
+    width: 200px;
+    height: 204px;
+    float: right;
+}
+
+/*CONTATO*/
+
+#contato{
+    margin-top: 70px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+#contato h1{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 42px;
+}
+
+.contatos button{
+    border: 1px solid #D93F21;
+    background-color: transparent;
+    color: #D93F21;
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.contatos button i{
+    float: left;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.contatos button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}

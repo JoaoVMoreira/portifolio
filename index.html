@@ -3,8 +3,110 @@
 <head>
     <meta charset='utf-8'>
     <title>João Moreira - Portifólio</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/> 
+    <script src="https://kit.fontawesome.com/12b2f251a4.js" crossorigin="anonymous"></script>
 </head>
 <body>  
-    <h1>Teste</h1>
+    <header>
+    <nav>
+        <img src="./imagens/logo-branco.png" alt="Loggo JM em branco"/>
+        <a>HOME</a>
+        <a>SKILLS</a>
+        <a>PROJECTS</a>
+        <a>ABOUT</a> 
+        <a>CONTACT</a>
+    </nav>
+    </header>
+    <main>
+        <div className="conteiner">
+            <div class="infos-header">
+                <div id="hi-icon">
+                    <span>👋</span>
+                    <p>Hi! I am <span class="nome">João</span></p>
+                </div>
+                <button><a href="./imagens/cv.pdf" download target="_blank">DOWNLOAD CV <i class="fa-solid fa-download"></i></a></button>
+                <p id="fullstack">Full-Stack developer</p>
+                <div class="avatar">
+                    <img src="./imagens/avatar.webp"/>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="my-skills">
+                    <h2>MY <span style="color: #ff6584;">SKILLS</span></h2>
+                    <p>Confira as principais tecnologias que uso em meus projetos.</p>
+                    <div class="tecnologias">
+                        <div class="tecIcons"><img src="./imagens/react.png"/></div>
+                        <div class="tecIcons"><img src="./imagens/html.png" /></div>
+                        <div class="tecIcons"><img src="./imagens/css.png" /></div>
+                        <div class="tecIcons"><img src="./imagens/javascript.png" /></div>
+                        <div class="tecIcons"><img src="./imagens/node.png" /></div>
+                        <div class="tecIcons"s><img src="./imagens/typescript.png" /></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="skills-img"><img src="./imagens/foguete.svg"/></div>
+            </div>
+            <div id="projects">
+                <h2>MEUS PRINCIPAIS <span style="color: #ff6584;">PROJETOS</span> POSTADOS</h2>
+                <div class="projeto-1">
+                    <img src="./imagens/projeto1.png"/>
+                    <div class="especificacoes">
+                        <h3>JM FINANÇAS</h3>
+                        <p>Aplicação para controle de finanças inspirado na plataforma Mobils e Organizze</p>
+                        <h4>Tecnologias utilizadas</h4>
+                        <div class="icone-tec">
+                            <img src="./imagens/react.png"/>
+                            <img src="./imagens/react.png" />
+                            <img src="./imagens/react.png" />
+                            <img src="./imagens/react.png" />
+                        </div>
+                        <button>VISUALIZAR PROJETO</button>
+                    </div>
+                </div>
+
+                <div class="projeto-2">
+                    <div class="especificacoes-2">
+                        <h3>JM FINANÇAS</h3>
+                        <p>Aplicação para controle de finanças inspirado na plataforma Mobils e Organizze</p>
+                        <h4>Tecnologias utilizadas</h4>
+                        <div class="icone-tec">
+                            <img src="./imagens/react.png" />
+                            <img src="./imagens/react.png" />
+                            <img src="./imagens/react.png" />
+                            <img src="./imagens/react.png" />
+                        </div>
+                        <button>VISUALIZAR PROJETO</button>
+                    </div>
+                    <img src="./imagens/projeto1.png" />
+                </div>
+            </div>
+
+            <div id="about">
+                <h1>ME <span style="color: #ff6584;">CONHEÇA</span></h1>
+                <div class="infos">
+                    <p>Iniciei minha carreira na programação em 2020 ao entrar na faculdade de Ciência da Computação. Porém devido a pandemia e
+                    outros fatores resolvi sair cursando o 5° período. A faculdade me ajudou a ter uma base em desenvolvimento de software.
+                    E isso foi fundamental para que eu pudesse seguir dali adiante por conta própria
+                    Programação se tornou um hobby para mim, fico grande parte do meu tempo livre lendo artigos e documentação de novas
+                    tecnologias e acredito que isso me levará muito longe no futuro
+                    Sigo com muita motivação e estou sempre a disposição para aprender novas tecnologias ou o que for nescessário</p>
+                    <p>
+                    <img src="./imagens/perfil.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+            
+            <div id="contato">
+                <h1>CONTACT <span style="color: #ff6584;">ME</span></h1>
+                <div class="contatos">
+                    <button><a href="jvittormoreira@outlook.pt" target="_blank" style=" color: #D93F21; text-decoration: none;"><i class="fa-sharp fa-solid fa-inbox"></i>Jvittormoreira@outlook.pt</a></button>
+                    <button style="color: #019041; border: 1px solid #019041;"> <a href="https://contate.me/moreira180" target="_blank" style=" color: #019041; text-decoration: none;"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a></button>
+                    <button style="color: #264DE4; border: 1px solid #264DE4;"><a href="https://www.linkedin.com/in/jvittormoreira/" target="_blank" style=" color: #264DE4; text-decoration: none;"><i class="fa-brands fa-linkedin"></i>Jvittormoreira</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
