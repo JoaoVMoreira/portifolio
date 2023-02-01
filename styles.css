@@ -1,6 +1,10 @@
+/*FONTES*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 
+
+/*CONFIGURAÇÕES GERAIS*/
 *{
     margin: 0;
     padding: 0;
@@ -10,56 +14,58 @@
 
 body{
     background-color: #161A27;
-    padding-top: 50px;
+    padding-top: 4vw;
 }
 
-
 /*MENU PRINCIPAL*/
-header{
+
+header a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 400;
+}
+
+header img {
+    width: 150px;
+}
+
+header li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+header ul{
     display: flex;
-    align-items: center;
+}
+
+header a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+    opacity: 0.7;
 }
 
 nav{
-    color: white;
-    overflow: hidden;
-    display: block;
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #1a1e2aec;
-}
-
-nav a{
-    cursor: pointer;
-    margin-left: 15px;
-    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'DM Sans', sans-serif;
-    margin-right: 20px;
+    background-color: #1a1e2aec;
+    height: 5vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-nav a:hover{
-    border-bottom: 1px white solid;
-    transition: 0.5s;
-}
 
-nav a:first-child{
-    margin-left: 0;
-}
 
-nav img{
-    width: 120px;
-    height: 37px;
-    float: left;
-    margin-left: 20px;
-}
 
+/*HEADER*/
 .infos-header{
     margin-top: 40px;
-    position: relative;
 }
 
 #hi-icon{
@@ -72,6 +78,23 @@ nav img{
     max-width: 250px;
     height: 130px;
     margin-left: 100px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.418);
+}
+
+#fullstack{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.418);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #1D222D;
+    margin-left: 70px;
+    position: initial;
 }
 
 #hi-icon span{
@@ -92,7 +115,6 @@ nav img{
     font-weight: bold;
 }
 
-
 .infos-header button{
     background-color: transparent;
     border: 1px solid white;
@@ -102,8 +124,7 @@ nav img{
     font-size: 18px;
     color: white;
     font-weight: bold;
-    position: relative;
-    left: 80%;
+    margin-left: 80%;
     bottom: 40px;
 }
 
@@ -120,48 +141,25 @@ nav img{
 .avatar{
     height: 550px;
     width: 550px;
-    position: relative;
-    left: 30%;
-    top: -100px;
+    margin-left: 30%;
+    margin-top: -100px;
     border-radius: 50%;
     background-color: #1D222D;
     text-align: center;
+    background-image: url('./imagens//avatar.webp');
+    background-repeat: no-repeat;
 }
-
-.avatar img{
-    width: 470px;
-    height: 470px;
-    position: relative;
-    top: 5%;
-    right: 10px;
-}
-
-#fullstack{
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    width: 200px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: #1D222D;
-    margin-left: 70px;
-}
-
-
 
 /*SKILLS*/
 
 #skills{
     background-color: #10141E;
-    position: relative;
-    top: -175px;
+    position: static;
     display: flex;
     flex-direction: row;
+    margin-top: -50px;
     
-}
+}   
 
 .my-skills{
     margin-top: 150px;
@@ -190,13 +188,11 @@ nav img{
 }
 
 .skills-img img{
-    width: 550px;
-    
+    width: 550px;   
 }
 
 .tecnologias{
     margin-top: 50px;
-    position: relative;
     width: 80%;
     margin-left: -50px;
     
@@ -227,6 +223,7 @@ nav img{
 
 /*PROJETOS*/
 #projects{
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -247,6 +244,12 @@ nav img{
     width: 900px;
     height: 506px;
     margin-left: 40px;
+    border-radius: 20px;
+}
+
+.projeto-1 img:hover{
+    opacity: 0.7;
+    transition: 0.2s;
 }
 
 .especificacoes{
@@ -287,6 +290,7 @@ nav img{
     border-radius: 50px;
 }
 
+
 .especificacoes button{
     margin-top: 50px;
     width: 350px;
@@ -299,9 +303,7 @@ nav img{
 }
 
 .especificacoes button:hover{
-    background-color: #10141E;
-    border: 2px solid white;
-    color: white;
+    transform: scale(1.07);
     transition: 0.2s;
 }
 
@@ -312,6 +314,12 @@ nav img{
     width: 900px;
     height: 506px;
     padding-right: 50px;
+    border-radius: 20px;
+}
+
+.projeto-2 img:hover {
+    opacity: 0.7;
+    transition: 0.2s;
 }
 
 .projeto-2 {
@@ -326,6 +334,7 @@ nav img{
     align-items: flex-start;
     justify-content: center;
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 .especificacoes-2 h3,
@@ -372,9 +381,7 @@ h4 {
 }
 
 .especificacoes-2 button:hover {
-    background-color: #10141E;
-    border: 2px solid white;
-    color: white;
+    transform: scale(1.07);
     transition: 0.2s;
 }
 
