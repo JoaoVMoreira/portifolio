@@ -65,7 +65,7 @@ nav{
 
 /*HEADER*/
 .infos-header{
-    margin-top: 40px;
+    margin-top: 3%;
 }
 
 #hi-icon{
@@ -77,7 +77,7 @@ nav{
     align-items: center;
     max-width: 250px;
     height: 130px;
-    margin-left: 100px;
+    margin-left: 7%;
     box-shadow: 8px 8px rgba(0, 0, 0, 0.418);
 }
 
@@ -93,14 +93,14 @@ nav{
     justify-content: center;
     border-radius: 12px;
     background-color: #1D222D;
-    margin-left: 70px;
+    margin-left: 5%;
     position: initial;
 }
 
 #hi-icon span{
     font-size: 75px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin-bottom: 1%;
+    margin-left: 1%;
 }
 
 #hi-icon p{
@@ -322,6 +322,9 @@ nav{
     transition: 0.2s;
 }
 
+.img-mobile{
+    display: none;
+}
 .projeto-2 {
     display: flex;
     flex-direction: row;
@@ -458,4 +461,278 @@ h4 {
 .contatos button:hover{
     transform: scale(1.1);
     transition: 0.2s;
+}
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media screen and (max-width: 768px) {
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /*MENU*/
+    nav{
+        height: 90px;
+    }
+
+    header li{
+        margin-left: 10px;
+    }
+
+    header img{
+        display: none;
+    }
+
+    /*Header*/
+
+    .infos-header{
+        padding-top: 15%;
+        max-width: 100%;
+    }
+
+    .avatar{
+        display: none;
+    }
+
+    .infos-header button{
+        margin-left: 65%;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    #skills{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .my-skills {
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .my-skills h2 {
+        font-size: 52px;
+        color: white;
+        margin-left: 0px;
+    }
+
+    .skills-img {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .skills-img img{
+        width: 300px;
+    }
+
+    .tecnologias{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row wrap;
+        margin-right: 0px;
+        margin-left: 0px;
+        overflow-x: auto;
+    }
+
+    .tecIcons {
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+        border: 1px solid #ff6584;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .tecIcons img {
+        height: 80px;
+        width: 80px;
+    }
+
+
+    /*PROJETOS*/
+    #projects {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .projeto-1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+
+    .projeto-1 img {
+        width: 400px;
+        height: 225px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .especificacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 8px;
+        justify-content: center;
+    }
+
+    .especificacoes h3,
+    h4 {
+        color: #ff6584;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .especificacoes p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .icone-tec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icone-tec img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin-left: 30px;
+        border: 1px solid #ff6584;
+        border-radius: 10px;
+        border-radius: 50px;
+    }
+
+    .projeto-2 img {
+        width: 400px;
+        height: 225px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    .projeto-2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .especificacoes-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 8px;
+        justify-content: center;
+    }
+
+    .especificacoes-2 h3,
+    h4 {
+        color: #ff6584;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+
+    .especificacoes-2 p {
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .icone-tec img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        margin-left: 30px;
+        border: 1px solid #ff6584;
+        border-radius: 10px;
+        border-radius: 50px;
+    }
+
+    .img-pc {
+        display: none;
+    }
+
+    .img-mobile {
+        display: flex;
+    }
+
+
+
+    /*ME CONHECA*/
+
+    #about {
+        background-color: #10141E;
+        height: auto;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .infos p {
+        color: white;
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    .infos img {
+        display: none;
+    }
+
+
+
+    /*CONTATO*/
+
+    #contato {
+        margin-top: 70px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .contatos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contatos button{
+        margin-top: 20px;
+    }
 }
